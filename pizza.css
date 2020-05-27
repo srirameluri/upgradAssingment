@@ -1,0 +1,363 @@
+.header{
+ background-color:#DC143C;     
+ color:#fff;     
+ border-color: #080808;     
+ min-height: 50px;     
+ border: 1px solid transparent;
+ } 
+ .inner-header{
+	 width:80%;
+	 margin:auto;
+ }
+ .logo{
+	  float: left;     
+	  height: 50px;    
+	  padding: 15px;    
+	  font-size: 22px;     
+	  font-weight: bold; 
+
+}
+.header-link{
+      float:right;   
+      font-size:14px;     
+	  height: 50px;     
+	  padding: 15px 0px;     
+	  font-size:22px;     
+	  font-weight: bold; 
+}
+
+
+.header1{
+ background-color: #000;     
+ color:#fff;     
+ border-color:#080808;     
+ min-height: 40px;     
+ border: 1px solid transparent;
+ } 
+ .inner-header1{
+	 width:90%;
+	 margin:auto;
+ }
+ .logo1{
+	  float: left;     
+	  height: 40px;    
+	  padding: 15px;    
+	  font-size: 15px;     
+	  font-weight: bold; 
+
+}
+.header-link1{
+      float:right;   
+      font-size:15px;     
+	  height: 50px;     
+	  padding: 15px 15px;     
+	  font-size:16px;     
+	  font-weight: bold; 
+}
+
+
+
+.grid{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid-item {
+  min-width: 250px;
+  max-width: 250px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin-bottom: 1rem;
+}
+
+.wrapper{
+  min-height: 100vh;
+  padding: 2rem 0;
+  background: #40424a;
+  color: #e4e4e8;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.grid-item figure {
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.05);
+}
+
+.grid-item figure img {
+  display: block;
+  max-width: 100%;
+}
+.grid-item figcaption {
+  display: block;
+  padding: .625rem .5rem;
+  background: #474952;
+}
+
+.container{
+	 width:90%;   
+	 margin:auto;  
+	 overflow:hidden; 
+}
+
+footer{
+	 background-color: #000;   
+	 color:#fff;   
+	 font-size:14px; 
+}
+
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+ /* color: red;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;*/
+ /* background-color: #f44336;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  border-radius: 0px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  
+  */
+  
+  
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: 	#DC143C;
+  color: white;
+  font-size: 25px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: right;
+  width: 25%;
+  padding: 5px;
+ /* border: 1px solid #ddd;
+  border-radius: 4px;  
+  padding: 5px; 
+  width: 150px;*/
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.c{
+ /* border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 300px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
